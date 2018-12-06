@@ -1,0 +1,106 @@
+ol.progtrckr {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 30%;
+  }
+  
+  ol.progtrckr li {
+    display: inline-block;
+    text-align: center;
+    line-height: 4.5rem;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  
+  ol.progtrckr li span {
+    padding: 0 20px;
+    font-size: 16px
+  }
+  
+  ol.progtrckr li.progtrckr-todo {
+    color: silver;
+    border-bottom: 4px solid silver;
+  }
+  
+  ol.progtrckr li.progtrckr-doing {
+    color: black;
+    border-bottom: 4px solid #4db20a;
+  }
+  
+  ol.progtrckr li.progtrckr-done {
+    color: black;
+    border-bottom: 4px solid #4db20a;
+  }
+  
+  ol.progtrckr li:after {
+    content: "\2003";
+  }
+  
+  ol.progtrckr li:before {
+    position: relative;
+    size: 20px;
+    bottom: -37px;
+    float: center;
+    left: 50%;
+  }
+  
+  ol.progtrckr li.progtrckr-todo:before {
+    content: "\2003";
+    color: silver;
+    background-color: silver;
+    width: 1.2em;
+    line-height: 1.4em;
+    border-radius: 1.2em;
+  }
+  
+  ol.progtrckr li.progtrckr-todo:hover:before {
+    color: #ff4500;
+  }
+  
+  ol.progtrckr li.progtrckr-doing:before {
+    content: "\2003";
+    color: #4db20a;
+    background-color: #4db20a;
+    width: 1.2em;
+    line-height: 1.2em;
+    border-radius: 1.2em;
+  }
+  
+  ol.progtrckr li.progtrckr-doing:hover:before {
+    color: #ff4500;
+  }
+  
+  ol.progtrckr li.progtrckr-done:before {
+    content: "\2003";
+    color: #CCCCCC;
+    background-color: #4db20a;
+    width: 1.2em;
+    line-height: 1.2em;
+    border-radius: 1.2em;
+  }
+  
+  ol.progtrckr li.progtrckr-done:hover:before {
+    color: #333;
+  }
+
+  
+ @media (max-width: 650px) {
+  .progtrckr li span {
+    display: none;
+  }
+}
+.progtrckr em {
+  display: none;
+  font-weight: bold;
+  font-size: 36px;
+  padding-left: 1rem;
+}
+
+@media (max-width: 650px) {
+  .progtrckr em {
+    display: inline;
+  }
+}
+
+  ::-webkit-scrollbar {display:none;}
+
